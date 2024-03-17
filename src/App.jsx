@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Home from './Pages/Home';
-import AboutUs from './Pages/AboutUs';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <Router>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
+
           </Routes>
         </Router>
       </div>
