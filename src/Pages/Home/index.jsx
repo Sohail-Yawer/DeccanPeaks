@@ -8,7 +8,7 @@ const Home = () => {
     <div> 
       <Navbar></Navbar>
       Home
-      <p>Puku Pickle gadu</p>
+      <p></p>
 
     </div>
     
