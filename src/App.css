@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+ aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10vw;
+  background-color: #282c34;
+  transform: translateX(100%);
+  transition: 0.15s ease transform;
+  color: aliceblue;
+ }
+
+ aside.visible{
+  transform: translateX(0);
+ }
+
+ .custom-button {
+  position: relative;
+  display: inline-block;
+  transition: border-color 0.5s, box-shadow 0.5s, color 0.5s, transform 0.65s;
+  text-shadow: none; /* Remove text shadow by default */
+}
+
+.custom-button:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.3);
+  z-index: -1;
+  transition: opacity 0.65s ease;
+  opacity: 0;
+  border-radius: 5px;
+  pointer-events: none; /* Prevents the pseudo-element from being clickable */
+}
+
+.custom-button:hover {
+  color: brown;
+  transform: scale(1.2);
+  z-index: 999999;
+}
