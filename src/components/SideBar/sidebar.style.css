@@ -1,16 +1,21 @@
-aside {
+.sidebar {
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
     padding: 10vw;
-    background-color: #282c34;
+    background-color: #aaaaaa;
     transform: translateX(100%);
     transition: 0.15s ease transform;
     color: aliceblue;
-   }
+  }
   
-   aside.visible{
+  .sidebar.visible {
     transform: translateX(0);
-   }
+  }
+  
+  .close-icon {
+    color: red;
+    cursor: pointer;
+  }
   
